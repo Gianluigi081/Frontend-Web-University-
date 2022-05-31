@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&family=Roboto:wght@100;400&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    <title>About</title>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hidenMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html">Acerca De</a></li>
+                    <li><a href="course.html">Cursos</a></li>
+                    <li><a href="aggrement.html">Convenios</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>Convenios internacionales</h1>
+    </section>
+
+
+    <!-- BLOG PAGE CONTENT -->
+
+    <section class="blog-content">
+
+        <div class="row">
+
+            <div class="blog-left">
+                <img src="images/students.jpg">
+                <h2></h2>
+                <p>La Coordinación de Relaciones Internacionales de la Universidad promueve la
+                    Internacionalización en doble vía de estudiantes, profesores e investigadores, a través de las
+                    diferentes modalidades de intercambio presencial o virtual, a nivel local, regional, nacional e
+                    internacional. Los estudiantes tienen la posibilidad de realizar intercambio académico, cultural, de
+                    idiomas, de investigación y práctica internacional, a través de los diferentes convenios marco,
+                    específicos y de doble titulación, firmados con diferentes Instituciones de Educación Superior a
+                    nivel mundial</p>
+                <br>
+                <p>Actualmente tenemos convenios con las siguientes universidades: </p>
+                
+                <div class="agreement">
+                    <ul>
+                        <li><a href="https://u-paris.fr/en/" target="_blank">Universidad de París</a></li>
+                        <li><a href="https://www.ub.edu/web/portal/es/" target="_blank">Universidad de Barcelona</a></li>
+                        <li><a href="https://www.harvard.edu/" target="_blank">Universidad de Harvard</a></li>
+                        <li><a href="https://www.su.se/cmlink/stockholm-university" target="_blank">Universidad de Estocolmo</a></li>
+                        <li><a href="https://en.snu.ac.kr/" target="_blank">Universidad Nacional de Seúl</a></li>
+                    </ul>
+
+                    <p>Alianzas con universidades de educación virtual: </p>
+
+                    <ul>
+                        <li><a href="https://app.edutin.com/home" target="_blank">Edutin Academy</a></li>
+                    </ul>
+                </div>
+
+            
+
+                <div class="comment-box">
+                    <h3>¿Más información? Déjanos tus datos y te contactaremos</h3>
+                    <form class="comment-form">
+                        <input type="text" name="fullname" placeholder="Ingresa tu nombre">
+                        <input type="text" name="email" placeholder="Ingresa tu correo">
+                        <textarea name="" rows="5" placeholder="Ingresa el mensaje"></textarea>
+                        <button type="submit" class="hero-btn red-btn">Enviar</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="blog-right">
+                <h3>¡Prepárate!</h3>
+                <a href="">
+                    <div>
+                        <p>Programa intensivo de inglés</p>
+                        <span><i class="fa fa-arrow-right"></i></span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <p>Programa intensivo de francés</p>
+                        <span><i class="fa fa-arrow-right"></i></span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <p>Programa intensivo de coreano</p>
+                        <span><i class="fa fa-arrow-right"></i></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="row">
+            <div class="footer-col">
+                <ul>
+                    <li>Enlaces de interés</li>
+                    <li><a href="#our-campus">Nuestras sedes</a></li>
+                    <li><a href="#our-facilities">Nuestras instalaciones</a></li>
+                    <li><a href="#student-testimonials">Testimonios</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <ul>
+                    <li>Preguntas frecuentes</li>
+                    <li><a href="about.html">¿Quiénes somos?</a></li>
+                    <li><a href="aggrement.html">¿Con quién tenemos convenios?</a></li>
+                    <li><a href="contact.html">¿Dónde estamos ubicados?</a></li>
+                </ul>
+            </div>
+            <div class="footer-col social-media">
+                <ul>
+                    <li>Siguenos en</li>
+                    <li><a href="#"><i class="fab fa-facebook"></i>Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i>Linkedin</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Javascript para el menú -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hidenMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+
+</html>

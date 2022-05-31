@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&family=Roboto:wght@100;400&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    <title>Página principal</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hidenMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html">Acerca De</a></li>
+                    <li><a href="course.html">Cursos</a></li>
+                    <li><a href="aggrement.html">Convenios</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="background">
+            <div class="text-box">
+                <h1>Universidad Tecnológica</h1>
+                <p>Nuestra misión es compartir el conocimiento para facilitar a cualquier persona <br> el acceso a educación de
+                    alta calidad, sin importar su región, edad u ocupación.
+                </p>
+                <a href="" class="hero-btn">¡Conoce más!</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- SEGUNDA SECCIÓN: COURSE -->
+    <section class="course">
+        <h1>Nuestros cursos</h1>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Pregrado</h3>
+                <p>Magna veniam aliquip non labore dolore adipisicing ut non sint magna aute cillum anim. Esse et non
+                    dolore velit ex esse laboris enim sit ad tempor mollit. Nisi pariatur sit quis ipsum ipsum cupidatat
+                    cillum in aute. <a href="course.html" class="">Más información</a></p>
+                   
+            </div>
+            <div class="course-col">
+                <h3>Especializaciones</h3>
+                <p>Magna veniam aliquip non labore dolore adipisicing ut non sint magna aute cillum anim. Esse et non
+                    dolore velit ex esse laboris enim sit ad tempor mollit. Nisi pariatur sit quis ipsum ipsum cupidatat
+                    cillum in aute. <a href="course.html" class="">Más información</a></p>
+            </div>
+            <div class="course-col">
+                <h3>Maestrías</h3>
+                <p>Magna veniam aliquip non labore dolore adipisicing ut non sint magna aute cillum anim. Esse et non
+                    dolore velit ex esse laboris enim sit ad tempor mollit. Nisi pariatur sit quis ipsum ipsum cupidatat
+                    cillum in aute. <a href="course.html" class="">Más información</a></p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- TERCERA SECCIÓN: CAMPUS -->
+    <a name="our-campus"></a>
+    <section class="campus">
+        <h1>Nuestras sedes</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+
+        <div class="row">
+            <div class="campus-col">
+                <img src="images/alemania.jpg">
+                <div class="layer">
+                    <h3>Alemania</h3>
+                </div>
+            </div>
+
+            <div class="campus-col">
+                <img src="images/usa.jpg">
+                <div class="layer">
+                    <h3>Estados Unidos</h3>
+                </div>
+            </div>
+
+            <div class="campus-col">
+                <img src="images/england.jpg">
+                <div class="layer">
+                    <h3>Inglaterra</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FACILITIES -->
+    <a name="our-facilities"></a>
+    <section class="facilities">
+        <h1>Nuestras Instalaciones</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/biblioteca.png">
+                <h3>Biblioteca Moderna</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, iure recusandae voluptatum non eum
+                    rerum necessitatibus facilis.</p>
+            </div>
+
+            <div class="facilities-col">
+                <img src="images/juego.jpg">
+                <h3>Zona de Juegos</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, iure recusandae voluptatum non eum
+                    rerum necessitatibus facilis.</p>
+            </div>
+
+            <div class="facilities-col">
+                <img src="images/salon_musica.jpg">
+                <h3>Auditorios</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, iure recusandae voluptatum non eum
+                    rerum necessitatibus facilis.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <a name="student-testimonials"></a>
+    <section class="testimonials">
+        <h1>¿Qué dicen nuestros estudiantes?</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, dignissimos pariatur. Eveniet ea ad delectus
+            nemo fugit, porro cupiditate, enim quibusdam atque reiciendis aliquam totam dolor accusantium quia veritatis
+            praesentium!</p>
+
+        <div class="row">
+            <div class="testimonial-col">
+                <img src="images/mujer.png">
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum assumenda libero porro, tempora
+                        quasi praesentium nobis non ea repudiandae repellat exercitationem quod in inventore, sit nemo.
+                    </p>
+                    <h3>Jane Johnson</h3>
+                    <div class="icons">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-alt"></i </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-col">
+                <img src="images/jackson.png">
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum assumenda libero porro, tempora
+                        quasi praesentium nobis non ea repudiandae repellat exercitationem quod in inventore, sit nemo.
+                    </p>
+                    <h3>Jackson Davis</h3>
+                    <div class="icons">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-alt"></i </span>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <!-- COMMENTS -->
+    <section class="comments">
+        <h1>Enroll For Our Various Online Courses Anywhere From The World</h1>
+        <a href="contact.html" class="hero-btn">CONTACT US</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="row">
+            <div class="footer-col">
+                <ul>
+                    <li>Enlaces de interés</li>
+                    <li><a href="#our-campus">Nuestras sedes</a></li>
+                    <li><a href="#our-facilities">Nuestras instalaciones</a></li>
+                    <li><a href="#student-testimonials">Testimonios</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <ul>
+                    <li>Preguntas frecuentes</li>
+                    <li><a href="about.html">¿Quiénes somos?</a></li>
+                    <li><a href="aggrement.html">¿Con quién tenemos convenios?</a></li>
+                    <li><a href="contact.html">¿Dónde estamos ubicados?</a></li>
+                </ul>
+            </div>
+            <div class="footer-col social-media">
+                <ul>
+                    <li>Siguenos en</li>
+                    <li><a href="#"><i class="fab fa-facebook"></i>Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i>Linkedin</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- Javascript para el menú -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hidenMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+
+</html>
